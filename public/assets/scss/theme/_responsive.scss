@@ -15,7 +15,7 @@
       }
     }
   }
-  .agency {
+  .TBS {
     .girl-boy {
       right: 8%;
     }
@@ -83,7 +83,7 @@
 @media (min-width: 1470px) {
   .event,
   .gym,
-  .agency,
+  .TBS,
   .music,
   .resume,
   .yoga,
@@ -159,7 +159,7 @@
       font-size: 70px;
     }
   }
-  // agency page
+  // TBS page
   .expert-bg,
   .blog-bg {
     .slick-slider {
@@ -342,8 +342,8 @@
 }
 
 @media only screen and (max-width: 1366px) and (min-width: 1200px) {
-  .agency.blog {
-    .blog-agency {
+  .TBS.blog {
+    .blog-TBS {
       .blog-contain {
         .img-container {
           .blog-head {
@@ -556,7 +556,7 @@
         margin-top: -14px;
       }
     }
-    &.agency {
+    &.TBS {
       .girl-boy {
         right: 10%;
         img {
@@ -564,7 +564,7 @@
         }
       }
     }
-    &.agency {
+    &.TBS {
       .center-text {
         margin-left: 40px;
       }
@@ -642,7 +642,7 @@
       }
     }
   }
-  .agency {
+  .TBS {
     .girl-boy {
       right: 0;
     }
@@ -652,7 +652,7 @@
         margin-bottom: 40px;
       }
     }
-    &.agency-content {
+    &.TBS-content {
       .blue-img {
         left: -18%;
       }
@@ -904,7 +904,7 @@
     }
   }
 
-  header.agency {
+  header.TBS {
     nav {
       ul {
         li .dropdown {
@@ -982,10 +982,10 @@
       }
     }
   }
-  .agency.testimonial-bg {
+  .TBS.testimonial-bg {
     background-size: contain;
   }
-  .header .bg.agency {
+  .header .bg.TBS {
     background-position: bottom;
   }
   header.nav-lg {
@@ -1437,7 +1437,7 @@
   }
   .event,
   .gym,
-  .agency,
+  .TBS,
   .resume {
     &.pricing {
       .price-container {
@@ -1587,7 +1587,7 @@
       margin-bottom: 50px;
     }
   }
-  .agency {
+  .TBS {
     .girl-boy {
       right: 6%;
       img {
@@ -1606,7 +1606,7 @@
         }
       }
     }
-    &.agency-content {
+    &.TBS-content {
       .about-img {
         width: 200px;
       }
@@ -1614,9 +1614,9 @@
         width: 450px;
         left: -20%;
       }
-      .agency-header-center-container {
-        .agency-head {
-          .agency-head-text {
+      .TBS-header-center-container {
+        .TBS-head {
+          .TBS-head-text {
             margin-top: -14px;
           }
         }
@@ -2121,7 +2121,7 @@
       }
     }
   }
-  .agency,
+  .TBS,
   .gym {
     &.format {
       .center-content {
@@ -2546,7 +2546,7 @@
       }
     }
   }
-  .agency.service-bg {
+  .TBS.service-bg {
     padding-top: 0;
   }
   .navbar {
@@ -3242,7 +3242,7 @@
         }
       }
     }
-    &.agency {
+    &.TBS {
       nav {
         ul {
           li {
@@ -3967,7 +3967,7 @@
       height: 290px;
     }
   }
-  .agency {
+  .TBS {
     &.header {
       .btn-default {
         padding: 12px;
@@ -4034,15 +4034,15 @@
         }
       }
     }
-    &.agency-content {
-      .agency-header-center-container {
+    &.TBS-content {
+      .TBS-header-center-container {
         margin-bottom: 30px;
       }
-      .agency-para {
+      .TBS-para {
         margin-bottom: 25px;
       }
     }
-    &.agency-content {
+    &.TBS-content {
       .about-img {
         width: 160px;
       }
@@ -4087,7 +4087,7 @@
   }
   footer {
     &.footer2 {
-      &.agency {
+      &.TBS {
         .brand-container {
           padding: 15px;
           margin-top: 30px;
@@ -4897,7 +4897,7 @@
 @media only screen and (min-width: 768px) {
   .blog-sec {
     &.blog-list {
-      .blog-agency {
+      .blog-TBS {
         .blog-contain {
           .blog-info {
             padding-top: 0;
@@ -5292,7 +5292,7 @@
   .split {
     .blog-list {
       &:nth-child(even) {
-        .blog-agency {
+        .blog-TBS {
           .blog-contain {
             > div {
               &:first-child {
@@ -5437,7 +5437,7 @@
     &.music,
     &.wedding,
     &.yoga,
-    &.agency {
+    &.TBS {
       .testimonial-para {
         margin-bottom: 20px !important;
       }
@@ -5508,9 +5508,9 @@
   }
 
   //inner pages start
-  .agency {
+  .TBS {
     &.blog {
-      .blog-agency {
+      .blog-TBS {
         .blog-contain {
           .img-container {
             .blog-info {
@@ -5615,9 +5615,9 @@
       }
     }
   }
-  .agency {
+  .TBS {
     &.blog {
-      .blog-agency {
+      .blog-TBS {
         .blog-contain {
           flex-flow: column;
           .img-container {
@@ -6414,7 +6414,7 @@
       }
     }
   }
-  .agency {
+  .TBS {
     &.header {
       .bg {
         background: $primary;
@@ -6485,15 +6485,15 @@
         }
       }
     }
-    &.agency-content {
+    &.TBS-content {
       text-align: center;
-      .agency-header-center-container {
+      .TBS-header-center-container {
         justify-content: center;
         .borders {
           display: none;
         }
       }
-      .agency-para,
+      .TBS-para,
       .btn-default {
         margin-left: 0;
       }
@@ -6503,12 +6503,12 @@
       .blue-img {
         display: none;
       }
-      .agency-head {
-        .agency-head-text {
+      .TBS-head {
+        .TBS-head-text {
           font-size: 245%;
         }
       }
-      .agency-para {
+      .TBS-para {
         line-height: 26px;
       }
     }
@@ -6843,7 +6843,7 @@
   }
   footer {
     &.footer2 {
-      &.agency {
+      &.TBS {
         .link-horizontal {
           margin-bottom: 20px;
         }
@@ -6921,7 +6921,7 @@
   }
   .event,
   .gym,
-  .agency,
+  .TBS,
   .resume {
     &.pricing {
       .btn-default {
@@ -6972,7 +6972,7 @@
       }
     }
   }
-  .agency {
+  .TBS {
     header {
       nav {
         padding: 15px 0;
@@ -7003,7 +7003,7 @@
     padding-bottom: 145px;
   }
   header {
-    &.agency {
+    &.TBS {
       nav {
         a {
           img {
@@ -7263,7 +7263,7 @@
       height: 38vh;
     }
   }
-  .agency {
+  .TBS {
     &.blog {
       &.blog-sec {
         &.blog-list,
@@ -8318,7 +8318,7 @@
     }
   }
   .event,
-  .agency {
+  .TBS {
     &.speaker {
       .container {
         margin-bottom: -30px;
@@ -8531,7 +8531,7 @@
       }
     }
   }
-  .agency {
+  .TBS {
     &.header {
       .bg {
         background-position: unset;
@@ -8579,7 +8579,7 @@
       }
     }
     &.blog {
-      .blog-agency {
+      .blog-TBS {
         .blog-contain {
           .img-container {
             .blog-info {
@@ -9367,7 +9367,7 @@
       }
     }
   }
-  footer.footer2.agency .link-horizontal ul li.borders-right {
+  footer.footer2.TBS .link-horizontal ul li.borders-right {
     margin-right: 2px;
   }
   .counter .counters.hover-counter {
@@ -9640,7 +9640,7 @@
       }
     }
   }
-  .agency {
+  .TBS {
     .icon-collection {
       display: block;
       margin-bottom: 0;
@@ -10269,7 +10269,7 @@
   .videos .w-100 {
     width: 100% !important;
   }
-  .agency {
+  .TBS {
     &.header {
       .btn-default {
         padding: 10px 12px;
@@ -10572,7 +10572,7 @@
     }
   }
 
-  .agency {
+  .TBS {
     &.blog {
       .blog-info {
         > .d-flex {
@@ -11109,11 +11109,11 @@
   .m-l-24 {
     margin-left: 10px;
   }
-  .agency {
-    &.agency-content {
-      .agency-header-center-container {
-        .agency-head {
-          .agency-head-text {
+  .TBS {
+    &.TBS-content {
+      .TBS-header-center-container {
+        .TBS-head {
+          .TBS-head-text {
             margin-top: -10px;
           }
         }

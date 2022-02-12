@@ -1,23 +1,18 @@
 module.exports = {
     BrandData: [
         {
-            img: '/assets/images/saas2/brand/1.png'
+            img: '/assets/images/TBS/clients/1.png'
         },
         {
-            img: '/assets/images/saas2/brand/2.png'
+            img: '/assets/images/TBS/clients/2.png'
         },
         {
-            img: '/assets/images/saas2/brand/3.png'
+            img: '/assets/images/TBS/clients/3.png'
         },
         {
-            img: '/assets/images/saas2/brand/5.png'
-        },
-        {
-            img: '/assets/images/saas2/brand/6.png'
-        },
-        {
-            img: '/assets/images/saas2/brand/1.png'
-        },
+            img: '/assets/images/TBS/clients/4.png'
+        }
+       
     ],
 
     PricingData:[

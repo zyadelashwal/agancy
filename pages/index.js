@@ -2,20 +2,21 @@ import React, {useEffect} from 'react'
 import Head from 'next/head'
 // import Custom Components
 import Header from '../containers/common/header'
-import BannerSection from '../sections/agency/banner'
-import AboutSection from '../sections/agency/about'
-import ServiceSection from '../sections/agency/service'
-import VideoSection from '../sections/agency/video'
-import WorkSection from '../sections/agency/work'
-import PricingSection from '../sections/agency/pricing'
-import ExpertSection from '../sections/agency/expert'
-import TestimonialSection from '../sections/agency/testimonial'
-import BlogSection from '../sections/agency/blog'
-import FooterSection from '../sections/agency/footer'
-import useTranslation from "next-translate/useTranslation";
+import BannerSection from '../sections/TBS/banner'
+import AboutSection from '../sections/TBS/about'
+import ServiceSection from '../sections/TBS/service'
+import ClientSection from '../sections/TBS/client'
+import ExpertSection from '../sections/TBS/expert'
+import BlogSection from '../sections/TBS/blog'
+import FooterSection from '../sections/TBS/footer'
 
-const Agency = () => {
+import useTranslation from "next-translate/useTranslation";
+import FloatingWhatsApp from 'react-floating-whatsapp'
+
+
+const TBS = () => {
   let { t } = useTranslation("common");
+  
   useEffect(() => {
     document.body.style.setProperty('--primary', '#10266b')
     document.body.style.setProperty('--secondary', '#464545')
@@ -26,34 +27,35 @@ const Agency = () => {
   return (
     <div className="theme-color" >
         <Head>
-            <title>{t("greeting")} </title>
-            <meta name='Agency Layout' content='' />
+            <title>{t("titleـpage")} </title>
+           
+            <meta name='TBS Layout' content='' />
         </Head>
 
-        <Header className="agency" />
+        <Header className="TBS" />
 
         <BannerSection />
 
         <AboutSection />
 
         <ServiceSection />
+        <ClientSection/>
+        
 
-        <VideoSection />
+        
 
-        <WorkSection />
+      
 
-        <PricingSection />
-
-        <ExpertSection />
-
-        <TestimonialSection />
+  
 
         <BlogSection />
-
+        <a href="https://wa.me/0096897285062" className="float" target="_blank">
+          <i class="fa fa-whatsapp my-float"></i>
+          </a>
         <FooterSection />
 
     </div>
   )
 }
 
-export default Agency;
+export default TBS;

@@ -15,7 +15,7 @@ const CardGridWrapper = ({
 
     return (
         <div className={className}>
-            <div className="blog-agency">
+            <div className="blog-TBS">
                 <div className="blog-contain">
                     <img alt="" className="img-fluid" src={image} />
                     <div className="img-container">

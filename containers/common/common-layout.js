@@ -14,7 +14,7 @@ const CommonLayout = ({ children, pathList, pathTitle }) => {
 
     return (
         <>
-            <Header className="dark agency" />
+            <Header className="dark TBS" />
 
             <Breadcrumb list={pathList} title={pathTitle} />
 

@@ -16,7 +16,7 @@ const GitSection = () => (
                                 <p>
                                     Unice is Perfect landing HTML template for any business. it has all
                                     features and modules to create your amazing landing page. you can use
-                                    this template for selling Agency, app landding, coffee, event, gym, music, digital, pizza,
+                                    this template for selling TBS, app landding, coffee, event, gym, music, digital, pizza,
                                     resume, sass, wedding, yoga etc.
                                 </p>
                             </div>

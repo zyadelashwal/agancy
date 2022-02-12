@@ -1,5 +1,5 @@
 module.exports = {
-    AgencyData:[
+    TBSData:[
         { 
             img:'/assets/images/event/l3-1.png',
             name:'Sam Rowling',

@@ -2,19 +2,19 @@ import React, { useState } from 'react';
 import { useRouter } from 'next/router'
 
 const Customizer = () => {
-    const [divName, setDivName] = useState('EN');
+    const [divName, setDivName] = useState('اللغة العربية');
     const [themeLayout, setThemeLayout] = useState(false);
     
     const router = useRouter();
     
     const ChangeRtl = (divName) => {
         
-        if (divName === 'AR') {
+        if (divName === 'اللغة العربية') {
             if (process.browser) {
                  document.body.classList.add('rtl');
                  router.push('/', '/ar', { locale: 'ar' })
 
-            setDivName('EN')
+            setDivName('English')
 
             }
             
@@ -23,7 +23,7 @@ const Customizer = () => {
                 document.body.classList.remove('rtl');
                 router.push('/', '/', { locale: 'en-US' })
 
-            setDivName('AR')
+            setDivName('اللغة العربية')
             }
             
         }

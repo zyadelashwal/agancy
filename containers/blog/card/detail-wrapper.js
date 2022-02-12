@@ -25,7 +25,7 @@ const ImageWrapper = () => (
     <div className="blog-block">
         <div className="blog-box">
             <div className="overflow-hidden">
-                <img alt="blog" className="img-fluid blur-up lazyload " src="/assets/images/agency/blog/20.jpg" /></div>
+                <img alt="blog" className="img-fluid blur-up lazyload " src="/assets/images/TBS/blog/20.jpg" /></div>
         </div>
     </div>
 )
@@ -35,18 +35,18 @@ const GalleryWrapper = () => (
         <div className="item">
             <div className="border-portfolio">
                 <a className="zoom_gallery" data-source="http://500px.com/photo/32736307"
-                    href="/assets/images/agency/blog/12.jpg" title="Into The Blue">
+                    href="/assets/images/TBS/blog/12.jpg" title="Into The Blue">
                     <img alt="" className="img-fluid blur-up lazyload "
-                        src="/assets/images/agency/blog/12.jpg" />
+                        src="/assets/images/TBS/blog/12.jpg" />
                 </a>
             </div>
         </div>
         <div className="item">
             <div className="border-portfolio">
                 <a className="zoom_gallery" data-source="http://500px.com/photo/32554131"
-                    href="/assets/images/agency/blog/10.jpg">
+                    href="/assets/images/TBS/blog/10.jpg">
                     <img alt="" className="img-fluid blur-up lazyload "
-                        src="/assets/images/agency/blog/10.jpg" />
+                        src="/assets/images/TBS/blog/10.jpg" />
                 </a>
             </div>
         </div>

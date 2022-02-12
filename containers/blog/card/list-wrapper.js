@@ -15,7 +15,7 @@ const CardGridWrapper = ({
 
     return (
         <div className={className}>
-            <div className="blog-agency">
+            <div className="blog-TBS">
                 <Row className="blog-contain pl-0 pr-0">
                     <Col xl="3" lg="4" md="6"  className="p-0">
                         <div className=" text-center">

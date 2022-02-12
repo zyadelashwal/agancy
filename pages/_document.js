@@ -1,5 +1,6 @@
  import Document, { Html, Main,Head, NextScript } from 'next/document'
  import withTranslation from 'next-translate/withTranslation'
+ import getT from 'next-translate/getT'
 
 const BaseCSS = ({ css }) =>
   <style
@@ -14,12 +15,37 @@ BaseCSS.defaultProps = {
 
 class MyDocument extends Document {
 
+  static async getInitialProps(ctx) {
+    const originalRenderPage = ctx.renderPage
+    const locale = ctx.locale;
+    const t = await getT(locale, 'common')
+
+    // Run the React rendering logic synchronously
+    ctx.renderPage = () =>
+      originalRenderPage({
+        // Useful for wrapping the whole react tree
+        enhanceApp: (App) => App,
+        // Useful for wrapping in a per-page basis
+        enhanceComponent: (Component) => Component,
+      })
+
+    // Run the parent `getInitialProps`, it now includes the custom `renderPage`
+    const initialProps = await Document.getInitialProps(ctx)
+    
+
+        
+    return { ...initialProps, locale ,t};
+  }
+
   render() {
     
+    const description = this.props.t('titleـpage')
+    
     return (
-      <Html>
+      <Html lang={this.props.locale}>
         <Head>
           <link rel="icon" href="/favicon.ico" />
+          <meta name={this.props.t('titleـpage')} content={this.props.t('titleـpage')} />
           <meta name='generator' content='mdx-docs' />
           <link href="https://fonts.googleapis.com/css?family=Capriola&amp;subset=latin-ext" rel="stylesheet" />
           <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet" />

@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { MENUITEMS } from '../../constant/menu';
-import {Container,Row} from 'reactstrap'
+import {Container,Row} from 'reactstrap';
+import useTranslation from "next-translate/useTranslation";
+
 const Nav = () => {
+    let { t } = useTranslation("common");
     const [mainmenu, setMainMenu] = useState(MENUITEMS);
     const [sidebar, setSidebar] = useState(false);
 
@@ -13,7 +16,7 @@ const Nav = () => {
 
     useEffect(() => {
         const currentUrl = location.pathname;
-        mainmenu.filter(items => {
+        MENUITEMS.filter(items => {
             if (items.path === currentUrl)
                 setNavActive(items)
             if (!items.children) return false
@@ -34,16 +37,16 @@ const Nav = () => {
         MENUITEMS.filter(menuItem => {
             if (menuItem != item)
                 menuItem.active = false
-            if (menuItem.children && menuItem.children.includes(item))
-                menuItem.active = true
-            if (menuItem.children) {
-                menuItem.children.filter(submenuItems => {
-                    if (submenuItems.children && submenuItems.children.includes(item)) {
-                        menuItem.active = true
-                        submenuItems.active = true
-                    }
-                })
-            }
+            // if (menuItem.children && menuItem.children.includes(item))
+            //     menuItem.active = true
+            // if (menuItem.children) {
+            //     menuItem.children.filter(submenuItems => {
+            //         if (submenuItems.children && submenuItems.children.includes(item)) {
+            //             menuItem.active = true
+            //             submenuItems.active = true
+            //         }
+            //     })
+            // }
         })
         item.active = !item.active
         setMainMenu({ mainmenu: MENUITEMS })
@@ -79,7 +82,7 @@ const Nav = () => {
         <div className={`navbar`} id="togglebtn">
             <div className="responsive-btn">
                 <a className="btn-back" onClick={closeSidebar}>
-                    <h5>back</h5>
+                    <h5>{t("back")}</h5>
                 </a>
             </div>
             <ul className="main-menu">
@@ -96,18 +99,22 @@ const Nav = () => {
                                         <span>{menuItem.title}</span>
                                     </a>
                                     : ''}
-                                {(menuItem.type === 'link') ?
+                                     {(menuItem.type === 'div') ?
+                                    <a className={`${menuItem.active ? 'active' : ''}`} href={menuItem.path} >
+                                        <span>{menuItem.title}</span>
+                                    </a>
+                                    : ''}
+                                {/* {(menuItem.type === 'link') ?
                                     <Link
                                         href={`${process.env.PUBLIC_URL}${menuItem.path}`}
                                         className={`${menuItem.active ? 'active' : ''}`}
-
                                         onClick={() => toggletNavActive(menuItem)}
                                     >
                                         <span>{menuItem.title}</span>
                                         {menuItem.children ?
                                             <i className="fa fa-angle-right pull-right"></i> : ''}
                                     </Link>
-                                    : ''}
+                                    : ''} */}
 
                                 {/* MEGHA MENU */}
                                 <div className={`mega-menu-container resize ${menuItem.active ? 'opensubmenu' : ''}`}>
@@ -203,6 +210,11 @@ const Nav = () => {
                                     : ''}
                                 {(menuItem.type === 'sub') ?
                                     <a className="dropdown" href="#javascript" onClick={() => toggletNavActive(menuItem)}>
+                                        <span>{menuItem.title}</span>
+                                    </a>
+                                    : ''}
+                                {(menuItem.type === 'div') ?
+                                    <a className={`${menuItem.active ? 'active' : ''}`} href={menuItem.path} >
                                         <span>{menuItem.title}</span>
                                     </a>
                                     : ''}

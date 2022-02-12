@@ -11,28 +11,28 @@ const Instagram = ({}) => {
                     <li>
                         <Link href="">
                             <a href="#javascript">
-                            <img alt="" className="img-fluid" src="/assets/images/agency/blog/2.jpg" />
+                            <img alt="" className="img-fluid" src="/assets/images/TBS/blog/2.jpg" />
                             </a>
                         </Link>
                     </li>
                     <li>
                         <Link href="">
                             <a href="#javascript">
-                            <img alt="" className="img-fluid" src="/assets/images/agency/blog/3.png" />
+                            <img alt="" className="img-fluid" src="/assets/images/TBS/blog/3.png" />
                             </a>
                         </Link>
                     </li>
                     <li>
                         <Link href="">
                             <a href="#javascript">
-                            <img alt="" className="img-fluid" src="/assets/images/agency/blog/4.jpg" />
+                            <img alt="" className="img-fluid" src="/assets/images/TBS/blog/4.jpg" />
                             </a>
                         </Link>
                     </li>
                     <li>
                         <Link href="">
                             <a href="#javascript">
-                            <img alt="" className="img-fluid" src="/assets/images/agency/blog/6.jpg" />
+                            <img alt="" className="img-fluid" src="/assets/images/TBS/blog/6.jpg" />
                             </a>
                         </Link>
                     </li>
@@ -41,28 +41,28 @@ const Instagram = ({}) => {
                     <li>
                         <Link href="">
                             <a href="#javascript">
-                            <img alt="" className="img-fluid" src="/assets/images/agency/blog/6.jpg" />
+                            <img alt="" className="img-fluid" src="/assets/images/TBS/blog/6.jpg" />
                             </a>
                         </Link>
                     </li>
                     <li>
                         <Link href="">
                             <a href="#javascript">
-                            <img alt="" className="img-fluid" src="/assets/images/agency/blog/4.jpg" />
+                            <img alt="" className="img-fluid" src="/assets/images/TBS/blog/4.jpg" />
                             </a>
                         </Link>
                     </li>
                     <li>
                         <Link href="">
                             <a href="#javascript">
-                            <img alt="" className="img-fluid" src="/assets/images/agency/blog/3.png" />
+                            <img alt="" className="img-fluid" src="/assets/images/TBS/blog/3.png" />
                             </a>
                         </Link>
                     </li>
                     <li>
                         <Link href="">
                             <a href="#javascript">
-                            <img alt="" className="img-fluid" src="/assets/images/agency/blog/2.jpg" />
+                            <img alt="" className="img-fluid" src="/assets/images/TBS/blog/2.jpg" />
                             </a>
                         </Link>
                     </li>

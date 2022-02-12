@@ -14,10 +14,10 @@ const Demo = () => (
             <Container>
                 <Row>
                     <Col xl="4" sm="6" className="text-center demo-effects">
-                        <Link href="/layouts/agency">
+                        <Link href="/layouts/TBS">
                             <a className="app-preview demo-layouts">
                                 <div className="trans-section">
-                                    <h4 className="preview-header">Agency Landing </h4>
+                                    <h4 className="preview-header">TBS Landing </h4>
                                 </div>
                                 <div className="layout-images">
                                     <div className="layout-container image-1"></div>

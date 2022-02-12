@@ -1,5 +1,6 @@
 import React, { Fragment, useState } from 'react';
 import { Container, Row, Col } from 'reactstrap'
+import Image from "next/image";
 const Header = () => {
 
     const [navbar, setNavbar] = useState(false);
@@ -15,7 +16,7 @@ const Header = () => {
                         <Col>
                             <div className="top-header">
                                 <div className="logo">
-                                    <a className="navbar-brand" href="#"><img src="assets/images/landing/logo.png"
+                                    <a className="navbar-brand" href="#"><Image width={60} height={60} src="assets/images/landing/logo.png"
                                         alt="logo" /></a>
                                 </div>
                                 <div className="main-menu m-x-auto" id="nav">

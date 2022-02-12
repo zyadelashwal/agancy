@@ -2,7 +2,7 @@ import React from 'react'
 import { Container, Row, Col } from 'reactstrap'
 const Footer = () => (
     <>
-        <footer className="resume copyright copyright-bg inner-pages-footer">
+        <footer className="TBS copyright copyright-bg inner-pages-footer">
             <Container>
                 <Row>
                     <Col xs="12">
@@ -13,12 +13,12 @@ const Footer = () => (
                     <Col xs="12">
                         <div className="link link-horizontal">
                             <ul className="justify-content-center">
-                                <li><a className="copyright-text" href="#">home</a></li>
+                                {/* <li><a className="copyright-text" href="#">home</a></li>
                                 <li><a className="copyright-text" href="#">couple</a></li>
                                 <li><a className="copyright-text" href="#">invitation</a></li>
                                 <li><a className="copyright-text" href="#">album </a></li>
                                 <li><a className="copyright-text" href="#">friends say</a></li>
-                                <li><a className="copyright-text" href="#">gift</a></li>
+                                <li><a className="copyright-text" href="#">gift</a></li> */}
                             </ul>
                         </div>
                     </Col>
@@ -53,20 +53,20 @@ const Footer = () => (
                 </Row>
             </Container>
         </footer>
-        <div className="agency copyright inner-page">
+        <div className="TBS copyright">
             <Container>
                 <Row>
                     <Col sm="6">
                         <div className="link-horizontal">
                             <ul>
-                                <li><a className="copyright-text" href="#">Privacy Policy</a></li>
-                                <li><a className="copyright-text" href="#">Terms &amp; Conditions</a></li>
+                                {/* <li><a className="copyright-text" href="#">Privacy Policy</a></li>
+                                <li><a className="copyright-text" href="#">Terms &amp; Conditions</a></li> */}
                             </ul>
                         </div>
                     </Col>
                     <Col sm="6">
                         <div>
-                            <h6 className="copyright-text text-white text-right">Copyright © 2020 Unice by <i aria-hidden="true" className="fa fa-heart"></i> pixelstrap
+                            <h6 className="copyright-text text-white text-right">Copyright © 2022 TBS  <i aria-hidden="true" className="fa fa-heart"></i> 
                             </h6>
                         </div>
                     </Col>

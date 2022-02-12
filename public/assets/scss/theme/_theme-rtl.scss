@@ -268,7 +268,7 @@
         }
       }
     }
-    &.agency {
+    &.TBS {
       .responsive-btn {
         i {
           color: #10266b !important;
@@ -433,9 +433,9 @@
     right: 250px;
     left: unset;
   }
-  .agency-content {
+  .TBS-content {
     text-align: right;
-    .agency-header-center-container {
+    .TBS-header-center-container {
       text-align: right;
       .borders {
         margin-left: 30px;
@@ -444,7 +444,7 @@
         border-right: unset;
       }
     }
-    .agency-para {
+    .TBS-para {
       text-align: right;
       margin-right: 30px;
     }
@@ -464,8 +464,8 @@
       }
     }
   }
-  .agency {
-    .blog-agency {
+  .TBS {
+    .blog-TBS {
       .blog-contain {
         .img-container {
           i {
@@ -570,7 +570,7 @@
       }
     }
   }
-  header.agency {
+  header.TBS {
     .navbar {
       background-color: #11266b;
       border-radius: 15px;
@@ -1712,7 +1712,7 @@
       }
     }
   }
-  .agency {
+  .TBS {
     &.speaker {
       .team-img {
         .social {
@@ -1833,7 +1833,7 @@
       }
     }
   }
-  .agency {
+  .TBS {
     &.testimonial {
       .testimonial-container {
         &.testimonial-container2 {
@@ -1877,7 +1877,7 @@
   /* responsive*/
   @media only screen and (max-width: 1199px) and (min-width: 992px) {
     header {
-      &.agency {
+      &.TBS {
         nav {
           ul {
             li {
@@ -2015,15 +2015,15 @@
         left: 15%;
         right: unset;
       }
-      &.agency {
+      &.TBS {
         .center-text {
           margin-right: 50px;
           margin-left: unset;
         }
       }
     }
-    .agency {
-      &.agency-content {
+    .TBS {
+      &.TBS-content {
         .blue-img {
           right: -18%;
           left: unset;
@@ -2074,8 +2074,8 @@
         }
       }
     }
-    .agency {
-      &.agency-content {
+    .TBS {
+      &.TBS-content {
         .blue-img {
           right: -20%;
           left: unset;
@@ -2144,14 +2144,14 @@
         }
       }
     }
-    .agency {
+    .TBS {
       &.header {
         .center-text {
           margin-right: 20px;
           margin-left: unset;
         }
       }
-      &.agency-content {
+      &.TBS-content {
         .blue-img {
           right: -25%;
           left: unset;
@@ -2326,7 +2326,7 @@
           color: #fff !important;
         }
       }
-      &.agency {
+      &.TBS {
         .responsive-btn {
           i {
             color: #fff !important;
@@ -2421,7 +2421,7 @@
         }
       }
     }
-    .agency {
+    .TBS {
       &.header {
         .center-text {
           margin-right: 0;
@@ -2499,7 +2499,7 @@
         justify-content: center;
       }
     }
-    .agency {
+    .TBS {
       &.blog {
         &.blog-split {
           .blog-list {

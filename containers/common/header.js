@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Nav from './nav'
 import Link from 'next/link'
 import { Container, Row, Col } from 'reactstrap'
-
+import Image from 'next/image'
 const Header = props => {
     const [show, setShow] = useState(false)
     const [sidebar, setSidebar] = useState(false);
@@ -20,25 +20,25 @@ const Header = props => {
                     <Col>
                         <nav>
                             <a className="m-r-auto" href="/">
-                                {props.className == 'agency' ?
-                                    <img alt="" className="img-fluid" src="/assets/images/logo/9.png" />
+                                {props.className == 'TBS' ?
+                                    <Image width={100} height={60} alt="" className="img-fluid" src="/assets/images/logo/9.png" />
                                     :
                                     props.className == 'dark' ?
-                                        <img alt="" className="img-fluid" src="/assets/images/logo/5.png" />
+                                    <Image width={100} height={60} alt="" className="img-fluid" src="/assets/images/logo/1.png" />
                                         :
                                         props.className == 'dark position-relative ecommerce' ?
-                                            <img alt="" className="img-fluid" src="/assets/images/logo/5.png" />
+                                        <Image width={100} height={60} alt="" className="img-fluid" src="/assets/images/logo/1.png" />
                                             :
                                             props.className == 'dark bg-white ecommerce' ?
-                                            <img alt="" className="img-fluid" src="/assets/images/logo/5.png" />
+                                            <Image width={100} height={60} alt="" className="img-fluid" src="/assets/images/logo/1.png" />
                                             :
-                                                props.className == 'dark agency' ?
-                                                    <img alt="" className="img-fluid" src="/assets/images/logo/5.png" />
+                                                props.className == 'dark TBS' ?
+                                                <Image width={100} height={60} alt="" className="img-fluid" src="/assets/images/logo/1.png" />
                                                     :
                                                     props.className == 'saas1' ?
-                                                        <img alt="" className="img-fluid" src="/assets/images/logo/3.png" />
+                                                    <Image width={100} height={60} alt="" className="img-fluid" src="/assets/images/logo/1.png" />
 
-                                                        : <img alt="" className="img-fluid" src="/assets/images/logo/1.png" />
+                                                        : <Image width={100} height={60} alt="" className="img-fluid" src="/assets/images/logo/1.png" />
                                 }
                             </a>
                             <div className="responsive-btn">
@@ -47,39 +47,7 @@ const Header = props => {
                                 </a>
                             </div>
                             <Nav />
-                            {props.shop &&
-                                <div className="top-header-right">
-                                    <ul>
-                                        <li className="search" >
-                                            <a href="#" onClick={() => setSearch(!search)}>
-                                                <i className="icon-search"></i>
-                                            </a>
-                                            <div aria-labelledby="dropdownMenuButton" className={`dropdown-menu ${search && `show`} dropdown-menu-right`}>
-                                                <form className="form-inline search-form">
-                                                    <div className="form-group">
-                                                        <label className="sr-only">Email</label>
-                                                        <input className="form-control-plaintext" placeholder="Search...."
-                                                            type="search" />
-                                                        <span className="d-sm-none mobile-search"></span>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </li>
-
-                                        <li className="account ">
-                                            <a href="#" onClick={() => setShow(!show)}>
-                                                <i className="icon-user"></i>
-                                            </a>
-                                            <div className={`dropdown-menu ${show && `show`} dropdown-menu-right`}>
-                                                <Link href={"/shop/auth/login"}><a href="#">Login</a></Link>
-                                                <a href="#">Account</a>
-                                                <Link href={"/shop/wishlist"}><a href="#">Wishlist</a></Link>
-                                                <Link href={"/shop/checkout"}><a href="#">checkout</a></Link>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            }
+                           
                         </nav>
                     </Col>
                 </Row>

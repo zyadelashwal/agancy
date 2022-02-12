@@ -252,7 +252,7 @@ body {
     }
     .header {
       .bg {
-        &.agency {
+        &.TBS {
           background-color: $dark-color;
         }
         &.app1-header,
@@ -470,7 +470,7 @@ body {
     .font-secondary {
       color: $white-5 !important;
     }
-    .agency {
+    .TBS {
       &.testimonial {
         .testimonial-container {
           &.testimonial-container2 {
@@ -560,7 +560,7 @@ body {
           }
         }
       }
-      &.agency {
+      &.TBS {
         background-image: linear-gradient($dark-color, $light-color);
       }
       .brand-container {
@@ -592,7 +592,7 @@ body {
       .copyright-text {
         color: $white-5;
       }
-      &.agency {
+      &.TBS {
         background-color: $light-color;
         &.inner-page {
           background: $light-color;
@@ -750,7 +750,7 @@ body {
           filter: brightness(0) invert(1);
         }
       }
-      &.agency {
+      &.TBS {
         .row {
           .counter-container {
             &:nth-child(2) {
@@ -781,7 +781,7 @@ body {
       }
     }
     .blog {
-      .blog-agency {
+      .blog-TBS {
         .blog-contain {
           background-color: $dark-color;
           border-color: $border-color;
@@ -1168,7 +1168,7 @@ body {
       .set-border {
         background: $dark-color;
       }
-      &.agency {
+      &.TBS {
         a {
           &.btn-white {
             border-color: $border-color;
@@ -2252,7 +2252,7 @@ body {
             }
           }
         }
-        &.agency {
+        &.TBS {
           nav {
             ul {
               li {
@@ -2294,7 +2294,7 @@ body {
       }
     }
     @media only screen and (max-width: 767px) {
-      &.agency {
+      &.TBS {
         header {
           nav {
             .responsive-btn {

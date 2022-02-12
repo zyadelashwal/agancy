@@ -15,6 +15,7 @@ import "../public/assets/scss/slick-theme.scss";
 import '../public/assets/scss/landing.scss'
 import Customizer from '../containers/customizer';
 
+import useTranslation from "next-translate/useTranslation";
 
 const { publicRuntimeConfig = {} } = getConfig() || {};
 
@@ -36,7 +37,8 @@ function MyFunctionComponent({ children }) {
   const [loader, setLoader] = useState(true)
   const [goingUp, setGoingUp] = useState(false)
 
-  
+  let { t } = useTranslation("common");
+
   useEffect(() => {
     // Page Loader
     setTimeout(() => {
@@ -66,8 +68,9 @@ function MyFunctionComponent({ children }) {
   return (
     <>
       <Head>
-        <title>Unice</title>
+        
         <meta name='viewport' content='width=device-width, initial-scale=1' />
+        <meta name={t("titleـpage")} content={t("titleـpage")} />
       </Head>
       {loader &&
         <div className="loader-wrapper">
